@@ -43,6 +43,10 @@
 		grid-area: main;
 		box-shadow: 2px 2px 2px grey;
 
+		h1{
+			text-align: center;
+		}
+
 		#meme{
 			
 			display: flex;
@@ -57,6 +61,12 @@
 		justify-content: space-between;
 	}	
 }
+
+#maps{
+	text-align: center;
+	margin-top: 100px;
+}
+
 .rslides {
 	position: relative;
 	list-style: none;

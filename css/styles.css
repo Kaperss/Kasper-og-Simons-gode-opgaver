@@ -43,6 +43,10 @@
   box-shadow: 2px 2px 2px grey;
 }
 
+#wrapper main h1 {
+  text-align: center;
+}
+
 #wrapper main #meme {
   display: flex;
   width: 1332px;
@@ -54,6 +58,11 @@
   grid-area: footer;
   display: flex;
   justify-content: space-between;
+}
+
+#maps {
+  text-align: center;
+  margin-top: 100px;
 }
 
 .rslides {
