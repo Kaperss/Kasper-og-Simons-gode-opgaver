@@ -2,3 +2,4 @@
 ### Kickflip for vildt, kickflip for snildt!
 ## Så langt så far
 hjælp hvorfor skriver jeg tekst her
+<img src="img/readme.png">
