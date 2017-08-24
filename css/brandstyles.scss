@@ -5,6 +5,8 @@
 	grid-template-areas: 
 	"header header header"
 	"main main main"
+	". first ."
+	". second ."
 	". footer .";
 
 	header{
@@ -42,13 +44,27 @@
 		background-image: url("../img/main_background.png");
 		grid-area: main;
 		box-shadow: 2px 2px 2px grey;
-		
-		#meme{
-			
+		.first {
+			grid-area: first;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 10px;
+			img {
+				border: 5px solid white;
+			}
+		}
+		.second {
 			display: flex;
+			margin: 0 auto;
+			grid-area:second;
 			width: 1332px;
+			text-align:center;
 			justify-content: space-between;
 			margin: 0 auto;
+			align-items: center;
+			img {
+				border: 5px solid white;
+			}
 		}
 	}
 	footer{
@@ -57,36 +73,3 @@
 		justify-content: space-between;
 	}	
 }
-.rslides {
-	position: relative;
-	list-style: none;
-	overflow: hidden;
-	width: 70%;
-	height: auto;
-	padding: 0;
-	margin: 0 auto;
-	margin-bottom: 20px;
-	}
-  
-  .rslides li {
-	-webkit-backface-visibility: hidden;
-	position: absolute;
-	display: none;
-	width: 100%;
-	left: 0;
-	top: 0;
-	}
-  
-  .rslides li:first-child {
-	position: relative;
-	display: block;
-	float: left;
-	}
-  
-  .rslides img {
-	display: block;
-	height: auto;
-	float: left;
-	width: 100%;
-	border: 0;
-	}

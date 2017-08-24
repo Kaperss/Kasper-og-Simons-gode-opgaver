@@ -1,0 +1,57 @@
+#wrapper {
+  display: grid;
+  grid-template-columns: 15vw auto 15vw;
+  grid-template-rows: 10% 720px auto;
+  grid-template-areas: "header header header" "main main main" ". first ." ". second ." ". footer ."; }
+  #wrapper header {
+    background-image: url("../img/navigation_background.png");
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15vw;
+    box-shadow: 20px 10px 10px lightgrey;
+    margin-bottom: 20px; }
+    #wrapper header nav ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between; }
+      #wrapper header nav ul li a {
+        color: grey;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        padding: 10px;
+        transition: .3s all; }
+        #wrapper header nav ul li a:hover {
+          color: #4d4d4d;
+          text-decoration: underline; }
+  #wrapper main {
+    background-image: url("../img/main_background.png");
+    grid-area: main;
+    box-shadow: 2px 2px 2px grey; }
+    #wrapper main .first {
+      grid-area: first;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 10px; }
+      #wrapper main .first img {
+        border: 5px solid white; }
+    #wrapper main .second {
+      display: flex;
+      margin: 0 auto;
+      grid-area: second;
+      width: 1332px;
+      text-align: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      align-items: center; }
+      #wrapper main .second img {
+        border: 5px solid white; }
+  #wrapper footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between; }
+
+/*# sourceMappingURL=brandstyles.css.map */
